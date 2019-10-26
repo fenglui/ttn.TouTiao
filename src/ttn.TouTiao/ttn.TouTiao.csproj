@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>fenglui</Authors>
+    <Company>苏州托托牛电子商务有限公司</Company>
+    <Version>1.0.2</Version>
+    <PackageProjectUrl>https://github.com/fenglui/ttn.TouTiao</PackageProjectUrl>
+    <PackageIconUrl>https://sf3-ttcdn-tos.pstatp.com/img/pgc-image/f68e0d02a82c4a5ab4867e8705c16c4c~120x256.image</PackageIconUrl>
+    <RepositoryUrl>https://github.com/fenglui/ttn.TouTiao.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>今日头条的 dotnet core api</Description>
   </PropertyGroup>
 
   <ItemGroup>
