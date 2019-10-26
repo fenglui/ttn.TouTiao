@@ -35,7 +35,7 @@ namespace ttn.TouTiao
         /// <param name="requestString">
         ///     The actual URL after the root domain to make the request to.
         /// </param>
-        /// <returns>The <see cref="HttpRequestMessage" /> from the URL.</returns>
+        /// <returns>The <see cref="HttpResponseMessage" /> from the URL.</returns>
         public async Task<HttpResponseMessage> GetAsync(string requestString) =>
             await httpClient.GetAsync(requestString).ConfigureAwait(false);
 
@@ -46,7 +46,7 @@ namespace ttn.TouTiao
         ///     The actual URL after the root domain to make the request to.
         /// </param>
         /// <param name="content">The HTTP request content sent to the server.</param>
-        /// <returns>The <see cref="HttpRequestMessage" /> from the URL.</returns>
+        /// <returns>The <see cref="HttpResponseMessage" /> from the URL.</returns>
         public async Task<HttpResponseMessage> PostAsync(string requestString, HttpContent content) =>
             await httpClient.PostAsync(requestString, content).ConfigureAwait(false);
 

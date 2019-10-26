@@ -21,6 +21,12 @@ namespace ttn.TouTiao
             return await ParseContent<T>(response);
         }
 
+        public static async Task<TouTiaoResponse<T>> PostJsonBodyAsync<T>(string requestString, string bodyContent) where T : class
+        {
+            StringContent content = new StringContent(bodyContent);
+            return await PostAsync<T>(requestString, content);
+        }
+
         public static async Task<TouTiaoResponse<T>> PostJsonBodyAsync<T>(string requestString, object obj) where T : class
         {
             StringContent content = new StringContent(JsonConvert.SerializeObject(obj));
