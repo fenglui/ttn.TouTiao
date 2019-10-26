@@ -1,0 +1,7 @@
+/src/ttn.TouTiao/obj
+/src/ttn.TouTiao/bin
+/src/ttn.TouTiao.Tests/test.config
+/src/ttn.TouTiao.Tests/bin
+/src/ttn.TouTiao.Tests/obj
+/.vs
+/publish.bat

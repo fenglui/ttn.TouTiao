@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ttn.TouTiao", "src\ttn.TouTiao\ttn.TouTiao.csproj", "{2FE8C75D-E5E2-476D-838A-7D4BAA764609}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ttn.TouTiao.Tests", "src\ttn.TouTiao.Tests\ttn.TouTiao.Tests.csproj", "{0F167B44-B47A-470E-8014-7D1E5C26DD13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{976371D8-4493-4EC8-A443-CBA94AA4F91E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FE8C75D-E5E2-476D-838A-7D4BAA764609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE8C75D-E5E2-476D-838A-7D4BAA764609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE8C75D-E5E2-476D-838A-7D4BAA764609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE8C75D-E5E2-476D-838A-7D4BAA764609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F167B44-B47A-470E-8014-7D1E5C26DD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F167B44-B47A-470E-8014-7D1E5C26DD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F167B44-B47A-470E-8014-7D1E5C26DD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F167B44-B47A-470E-8014-7D1E5C26DD13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8ADA7E4-5945-4FC5-991F-D53421DE3781}
+	EndGlobalSection
+EndGlobal
