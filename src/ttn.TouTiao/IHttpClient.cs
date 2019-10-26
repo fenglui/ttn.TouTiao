@@ -14,6 +14,14 @@ namespace ttn.TouTiao
         /// </summary>
         /// <param name="requestString">The full URL to make the request to.</param>
         /// <returns>The response from <paramref name="requestString" />.</returns>
-        Task<HttpResponseMessage> HttpRequestAsync(string requestString);
+        Task<HttpResponseMessage> GetAsync(string requestString);
+
+        /// <summary>
+        ///     The method to use when making an HTTP request.
+        /// </summary>
+        /// <param name="requestString">The full URL to make the request to.</param>
+        /// <param name="content"></param>
+        /// <returns>The response from <paramref name="requestString" />.</returns>
+        Task<HttpResponseMessage> PostAsync(string requestString, HttpContent content);
     }
 }

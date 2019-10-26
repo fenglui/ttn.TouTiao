@@ -36,8 +36,19 @@ namespace ttn.TouTiao
         ///     The actual URL after the root domain to make the request to.
         /// </param>
         /// <returns>The <see cref="HttpRequestMessage" /> from the URL.</returns>
-        public async Task<HttpResponseMessage> HttpRequestAsync(string requestString) =>
-            await httpClient.GetAsync(new Uri(requestString)).ConfigureAwait(false);
+        public async Task<HttpResponseMessage> GetAsync(string requestString) =>
+            await httpClient.GetAsync(requestString).ConfigureAwait(false);
+
+        /// <summary>
+        ///     Make a request to the <paramref name="requestString" />.
+        /// </summary>
+        /// <param name="requestString">
+        ///     The actual URL after the root domain to make the request to.
+        /// </param>
+        /// <param name="content">The HTTP request content sent to the server.</param>
+        /// <returns>The <see cref="HttpRequestMessage" /> from the URL.</returns>
+        public async Task<HttpResponseMessage> PostAsync(string requestString, HttpContent content) =>
+            await httpClient.PostAsync(requestString, content).ConfigureAwait(false);
 
         /// <summary>
         ///     Destructor

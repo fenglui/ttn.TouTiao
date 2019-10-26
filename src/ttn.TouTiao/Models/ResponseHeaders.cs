@@ -36,5 +36,7 @@ namespace ttn.TouTiao.Models
         /// </summary>
         /// <remarks>optional.</remarks>
         public string ResponseTime { get; set; }
+
+        public MediaTypeHeaderValue ContentType { get; set; }
     }
 }
